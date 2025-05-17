@@ -4,6 +4,7 @@ import com.example.backend.entity.Task
 import com.example.backend.repository.TaskRepository
 import org.springframework.web.bind.annotation.*
 
+@CrossOrigin(origins = ["http://localhost:5174"])
 @RestController
 @RequestMapping("/tasks")
 class TaskController(private val repository: TaskRepository) {
